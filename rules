@@ -8,15 +8,19 @@
 # This is the debhelper compatability version to use.
 export DH_COMPAT=2
 
+export DEB_HOST_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+export DEB_BUILD_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+
 configure: configure-stamp
 configure-stamp: 
 	dh_testdir
+
 #	Add here commands to configure the package.
-	aclocal
-	autoheader
-	automake --add-missing
-	autoconf
-	./configure --prefix=/usr --mandir=\$${prefix}/share/man --infodir=\$${prefix}/share/info
+	touch configure.in && \
+	touch aclocal.m4 && \
+	touch configure
+	./configure --build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE) \
+		--prefix=/usr --mandir=\$${prefix}/share/man --infodir=\$${prefix}/share/info
 
 	touch configure-stamp
 
@@ -26,7 +30,6 @@ build-stamp:
 
 #	Add here commands to compile the package.
 	$(MAKE)
-#	/usr/bin/docbook-to-man debian/robotfindskitten-v1600003.sgml > robotfindskitten-v1600003.1
 
 	touch build-stamp
 
@@ -35,11 +38,18 @@ clean:
 	dh_testroot
 	rm -f build-stamp configure-stamp
 
+	-test -r /usr/share/misc/config.sub && \
+		cp -f /usr/share/misc/config.sub config.sub
+	-test -r /usr/share/misc/config.guess && \
+		cp -f /usr/share/misc/config.guess config.guess
+
 #	Add here commands to clean up after the build process.
 	-([ -f Makefile ] && $(MAKE) distclean) || true
-	rm -f COPYING INSTALL config.guess config.sub install-sh \
-		ltconfig ltmain.sh missing mkinstalldirs doc/texinfo.tex \
+	rm -f \
 		Makefile config.status conftest conftest.o \
+		depcomp \
+		doc/robotfindskitten.info \
+		doc/robotfindskitten.pdf \
 		src/robotfindskitten.o src/robotfindskitten
 
 	dh_clean
