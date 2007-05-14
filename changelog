@@ -1,3 +1,15 @@
+robotfindskitten (1.4142135.349-2) unstable; urgency=low
+
+  * New maintainer. (closes: #423893)
+  * Lintian cleanup:
+  *  debian/copyright: "Upstream Author(s)" to "Upstream Author"
+  *  debian/copyright: Added common-license GPL location
+  *  debian/rules: Moved DH_COMPAT to debian/compat
+  *  debian/compat: Updated to compat version 5
+  *  debian/control: Updated to standards version 3.7.2
+
+ -- Ryan Finnie <ryan@finnie.org>  Mon, 14 May 2007 13:02:06 -0700
+
 robotfindskitten (1.4142135.349-1.1) unstable; urgency=low
 
   * Non-maintainer upload.
