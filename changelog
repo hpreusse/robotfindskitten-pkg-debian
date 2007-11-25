@@ -1,3 +1,11 @@
+robotfindskitten (1.4142135.349-3) unstable; urgency=low
+
+  * debian/control: Added "Dm-Upload-Allowed: yes" for debian-maintainer
+    Ryan Finnie.
+  * debian/rules: changed deprecated dh_installmanpages to dh_installman
+
+ -- Ryan Finnie <ryan@finnie.org>  Sat, 24 Nov 2007 22:55:27 -0800
+
 robotfindskitten (1.4142135.349-2) unstable; urgency=low
 
   * New maintainer. (closes: #423893)
