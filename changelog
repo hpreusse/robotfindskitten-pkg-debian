@@ -1,3 +1,17 @@
+robotfindskitten (1.4142135.349-5) unstable; urgency=low
+
+  * Dm-Upload-Allowed changed to XS-Dm-Upload-Allowed so it may be exported
+    to the .dsc.
+
+ -- Ryan Finnie <ryan@finnie.org>  Mon, 26 Nov 2007 22:34:16 -0800
+
+robotfindskitten (1.4142135.349-4) unstable; urgency=low
+
+  * debian/rules: Don't touch(1) automake files; newer automakes (if
+    present) will FTBFS if needed to regenerate, as touch(1) would do.
+
+ -- Ryan Finnie <ryan@finnie.org>  Mon, 26 Nov 2007 13:55:23 -0800
+
 robotfindskitten (1.4142135.349-3) unstable; urgency=low
 
   * debian/control: Added "Dm-Upload-Allowed: yes" for debian-maintainer

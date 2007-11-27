@@ -2,9 +2,9 @@ Source: robotfindskitten
 Section: games
 Priority: optional
 Maintainer: Ryan Finnie <ryan@finnie.org>
-Dm-Upload-Allowed: yes
 Build-Depends: debhelper, libncurses5-dev, texinfo
 Standards-Version: 3.7.2
+XS-Dm-Upload-Allowed: yes
 
 Package: robotfindskitten
 Architecture: any

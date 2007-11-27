@@ -13,9 +13,6 @@ configure-stamp:
 	dh_testdir
 
 #	Add here commands to configure the package.
-	touch configure.in && \
-	touch aclocal.m4 && \
-	touch configure
 	./configure --build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE) \
 		--prefix=/usr --mandir=\$${prefix}/share/man --infodir=\$${prefix}/share/info
 
@@ -34,11 +31,6 @@ clean:
 	dh_testdir
 	dh_testroot
 	rm -f build-stamp configure-stamp
-
-	-test -r /usr/share/misc/config.sub && \
-		cp -f /usr/share/misc/config.sub config.sub
-	-test -r /usr/share/misc/config.guess && \
-		cp -f /usr/share/misc/config.guess config.guess
 
 #	Add here commands to clean up after the build process.
 	-([ -f Makefile ] && $(MAKE) distclean) || true
@@ -59,6 +51,8 @@ install: build
 
 #	Add here commands to install the package into debian/tmp.
 	$(MAKE) install prefix=$(CURDIR)/debian/robotfindskitten/usr
+	install -m 0755 -d $(CURDIR)/debian/robotfindskitten/usr/share/man/man6
+	install -m 0644 $(CURDIR)/debian/robotfindskitten.6 $(CURDIR)/debian/robotfindskitten/usr/share/man/man6
 
 
 # Build architecture-independent files here.
