@@ -36,9 +36,7 @@ clean:
 	-([ -f Makefile ] && $(MAKE) distclean) || true
 	rm -f \
 		Makefile config.status conftest conftest.o \
-		depcomp \
-		doc/robotfindskitten.info \
-		doc/robotfindskitten.pdf \
+		autom4te.cache \
 		src/robotfindskitten.o src/robotfindskitten
 
 	dh_clean
@@ -51,8 +49,6 @@ install: build
 
 #	Add here commands to install the package into debian/tmp.
 	$(MAKE) install prefix=$(CURDIR)/debian/robotfindskitten/usr
-	install -m 0755 -d $(CURDIR)/debian/robotfindskitten/usr/share/man/man6
-	install -m 0644 $(CURDIR)/debian/robotfindskitten.6 $(CURDIR)/debian/robotfindskitten/usr/share/man/man6
 
 
 # Build architecture-independent files here.

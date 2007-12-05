@@ -1,3 +1,12 @@
+robotfindskitten (1.7320508.406-1) unstable; urgency=low
+
+  * New upstream version. (closes: #199680)
+  * debian/control: Added Homepage field.
+  * debian/control: Removed Build-Depends: texinfo (robotfindskitten.info
+    does not need to be rebuilt).
+
+ -- Ryan Finnie <ryan@finnie.org>  Wed, 05 Dec 2007 01:38:37 -0800
+
 robotfindskitten (1.4142135.349-5) unstable; urgency=low
 
   * Dm-Upload-Allowed changed to XS-Dm-Upload-Allowed so it may be exported
