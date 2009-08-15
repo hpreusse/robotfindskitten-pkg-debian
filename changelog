@@ -1,3 +1,10 @@
+robotfindskitten (1.7320508.406-2) unstable; urgency=low
+
+  * Added direntry and rebuilt robotfindskitten.info (closes: #528888)
+  * Lintian cleanup
+
+ -- Ryan Finnie <ryan@finnie.org>  Sat, 15 Aug 2009 11:42:16 -0700
+
 robotfindskitten (1.7320508.406-1) unstable; urgency=low
 
   * New upstream version. (closes: #199680)

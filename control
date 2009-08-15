@@ -3,8 +3,8 @@ Section: games
 Priority: optional
 Maintainer: Ryan Finnie <ryan@finnie.org>
 Homepage: http://www.robotfindskitten.org/
-Build-Depends: debhelper, libncurses5-dev
-Standards-Version: 3.7.2
+Build-Depends: debhelper (>= 5), libncurses5-dev
+Standards-Version: 3.8.2
 XS-Dm-Upload-Allowed: yes
 
 Package: robotfindskitten
