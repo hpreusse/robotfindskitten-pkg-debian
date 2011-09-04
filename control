@@ -3,13 +3,13 @@ Section: games
 Priority: optional
 Maintainer: Ryan Finnie <ryan@finnie.org>
 Homepage: http://www.robotfindskitten.org/
-Build-Depends: debhelper (>= 5), libncurses5-dev
-Standards-Version: 3.8.2
+Build-Depends: debhelper (>= 7.0.50~), libncurses5-dev
+Standards-Version: 3.9.2
 XS-Dm-Upload-Allowed: yes
 
 Package: robotfindskitten
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: dpkg (>= 1.15.4) | install-info, ${misc:Depends}, ${shlibs:Depends}
 Description: Zen Simulation of robot finding kitten
  In this simulation, you play the part of robot. Your task is to
  complete the simulation by finding kitten, as is your destiny, and

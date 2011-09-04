@@ -1,0 +1,6 @@
+# robotfindskitten is available from 
+# http://robotfindskitten.org/download/POSIX/ -- but due to its 
+# eclectic history, older versions (v1600003.248b) look newer than the 
+# current version format, and uscan appears not to be able to 
+# compensate.  C'est la vie.
+robotfindskitten source: debian-watch-file-is-missing

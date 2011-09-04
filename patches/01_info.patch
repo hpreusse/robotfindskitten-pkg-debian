@@ -1,0 +1,61 @@
+Added direntry and rebuilt robotfindskitten.info (closes: #528888)
+
+diff -ruN robotfindskitten-1.7320508.406.orig/doc/robotfindskitten.info robotfindskitten-1.7320508.406/doc/robotfindskitten.info
+--- robotfindskitten-1.7320508.406.orig/doc/robotfindskitten.info	2007-11-27 14:58:58.000000000 -0800
++++ robotfindskitten-1.7320508.406/doc/robotfindskitten.info	2011-09-04 14:28:16.000000000 -0700
+@@ -1,7 +1,11 @@
+-This is robotfindskitten.info, produced by makeinfo version 4.8 from
++This is robotfindskitten.info, produced by makeinfo version 4.13 from
+ robotfindskitten.texi.
+ 
+ INFO-DIR-SECTION Games
++START-INFO-DIR-ENTRY
++* robotfindskitten: (robotfindskitten).	Zen simulation.
++END-INFO-DIR-ENTRY
++
+    This file documents the `robotfindskitten' Zen simulation.
+ 
+    Copyright (C) 1997, 1999, 2000 Leonard Richardson.
+@@ -329,17 +333,17 @@
+ 
+ 
+ Tag Table:
+-Node: Top894
+-Node: The Niceties1511
+-Node: The Documentation2178
+-Node: The Parts of the Simulation3082
+-Node: Controls4248
+-Node: A Word of Warning4965
+-Node: Another Word of Warning5131
+-Node: Yet Another Word of Warning5589
+-Node: Technical Information for Hard-Core Geeks5922
+-Node: Join the Bludgeoning robotfindskitten Community!7296
+-Node: A Final Thought8319
+-Node: Index10104
++Node: Top992
++Node: The Niceties1609
++Node: The Documentation2276
++Node: The Parts of the Simulation3180
++Node: Controls4346
++Node: A Word of Warning5063
++Node: Another Word of Warning5229
++Node: Yet Another Word of Warning5687
++Node: Technical Information for Hard-Core Geeks6020
++Node: Join the Bludgeoning robotfindskitten Community!7394
++Node: A Final Thought8417
++Node: Index10202
+ 
+ End Tag Table
+diff -ruN robotfindskitten-1.7320508.406.orig/doc/robotfindskitten.texi robotfindskitten-1.7320508.406/doc/robotfindskitten.texi
+--- robotfindskitten-1.7320508.406.orig/doc/robotfindskitten.texi	2007-11-27 13:15:02.000000000 -0800
++++ robotfindskitten-1.7320508.406/doc/robotfindskitten.texi	2011-09-04 14:28:16.000000000 -0700
+@@ -5,6 +5,9 @@
+ @finalout
+ @setchapternewpage odd
+ @dircategory Games
++@direntry
++* robotfindskitten: (robotfindskitten).	Zen simulation.
++@end direntry
+ @c %**end of header
+ 
+ 
