@@ -1,3 +1,10 @@
+robotfindskitten (1.7320508.406-3.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Use dh-autoreconf in build to support new architectures (Closes: #727956)
+
+ -- Chen Baozi <baozich@gmail.com>  Fri, 06 Jun 2014 20:42:06 +0800
+
 robotfindskitten (1.7320508.406-3) unstable; urgency=low
 
   * Housekeeping release (no user-visible changes)
