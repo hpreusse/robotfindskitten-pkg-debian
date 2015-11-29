@@ -5,7 +5,8 @@ Maintainer: Ryan Finnie <ryan@finnie.org>
 Homepage: http://www.robotfindskitten.org/
 Build-Depends: debhelper (>= 7.0.50~), libncurses5-dev, dh-autoreconf
 Standards-Version: 3.9.2
-XS-Dm-Upload-Allowed: yes
+Vcs-Browser: https://github.com/rfinnie/robotfindskitten-pkg-debian
+Vcs-Git: https://github.com/rfinnie/robotfindskitten-pkg-debian
 
 Package: robotfindskitten
 Architecture: any

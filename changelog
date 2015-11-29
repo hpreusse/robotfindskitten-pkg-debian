@@ -1,6 +1,8 @@
 robotfindskitten (1.7320508.406-4) UNRELEASED; urgency=medium
 
   * Acknowledge NMU (Closes: #727956), thank you Chen Baozi
+  * Add Vcs-Git plus related options (source/options, .gitignore)
+  * Remove XS-Dm-Upload-Allowed
 
  -- Ryan Finnie <ryan@finnie.org>  Sun, 29 Nov 2015 04:47:52 +0000
 
