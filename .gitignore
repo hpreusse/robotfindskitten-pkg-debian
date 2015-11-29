@@ -2,4 +2,6 @@ files
 robotfindskitten
 robotfindskitten.debhelper.log
 robotfindskitten.substvars
+autoreconf.after
+autoreconf.before
 
