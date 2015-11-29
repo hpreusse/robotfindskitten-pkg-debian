@@ -1,0 +1,4 @@
+debian/robotfindskitten.desktop usr/share/applications
+debian/robotfindskitten.xpm usr/share/pixmaps
+debian/robotfindskitten-48.png usr/share/icons/hicolor/48x48/apps
+debian/robotfindskitten-512.png usr/share/icons/hicolor/512x512/apps
