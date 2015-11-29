@@ -1,13 +1,13 @@
-robotfindskitten (1.7320508.406-4) UNRELEASED; urgency=medium
+robotfindskitten (1.7320508.406-4) unstable; urgency=medium
 
   * Acknowledge NMU (Closes: #727956), thank you Chen Baozi
   * Add Vcs-Git plus related options (source/options, .gitignore)
   * Remove XS-Dm-Upload-Allowed
-  * Bump Standards-Version to 3.9.6 (no immediate changes)
+  * Bump Standards-Version to 3.9.6, no changes
   * Switch to debhelper compat 9 for automatic hardening
   * Install .desktop and icons (Closes: #738022)
 
- -- Ryan Finnie <ryan@finnie.org>  Sun, 29 Nov 2015 04:47:52 +0000
+ -- Ryan Finnie <ryan@finnie.org>  Sun, 29 Nov 2015 05:52:48 +0000
 
 robotfindskitten (1.7320508.406-3.1) unstable; urgency=low
 
