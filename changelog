@@ -1,3 +1,11 @@
+robotfindskitten (1.7320508.406-5) unstable; urgency=medium
+
+  * Fix installation name of desktop png icons
+  * Add full pathname to .desktop
+  * Remove menu file/xpm per tech-ctte #741573
+
+ -- Ryan Finnie <ryan@finnie.org>  Sun, 29 Nov 2015 19:25:41 +0000
+
 robotfindskitten (1.7320508.406-4) unstable; urgency=medium
 
   * Acknowledge NMU (Closes: #727956), thank you Chen Baozi

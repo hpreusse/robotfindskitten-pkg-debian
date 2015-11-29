@@ -6,6 +6,6 @@ Name=robotfindskitten
 GenericName=robotfindskitten
 Categories=Game;LogicGame;
 Keywords=text;ncurses;terminal;console;game;puzzle;zen;simulation;robot;kitten;
-Exec=robotfindskitten
+Exec=/usr/games/robotfindskitten
 Icon=robotfindskitten
 Comment=zen simulation of robot finding kitten

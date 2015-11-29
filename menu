@@ -1,6 +1,0 @@
-?package(robotfindskitten):needs="text" \
-    section="Games/Simulation" \
-    title="robotfindskitten" \
-    longtitle="robotfindskitten" \
-    command="/usr/games/robotfindskitten" \
-    icon="/usr/share/pixmaps/robotfindskitten.xpm"

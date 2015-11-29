@@ -7,6 +7,18 @@
 %:
 	dh $@ --with autoreconf
 
+override_dh_install:
+	dh_install
+	install -m 0755 -d $(CURDIR)/debian/robotfindskitten/usr/share/icons/hicolor/48x48/apps
+	install -m 0644 $(CURDIR)/debian/robotfindskitten-48.png \
+		$(CURDIR)/debian/robotfindskitten/usr/share/icons/hicolor/48x48/apps/robotfindskitten.png
+	install -m 0755 -d $(CURDIR)/debian/robotfindskitten/usr/share/icons/hicolor/512x512/apps
+	install -m 0644 $(CURDIR)/debian/robotfindskitten-512.png \
+		$(CURDIR)/debian/robotfindskitten/usr/share/icons/hicolor/512x512/apps/robotfindskitten.png
+	install -m 0755 -d $(CURDIR)/debian/robotfindskitten/usr/share/applications
+	install -m 0644 $(CURDIR)/debian/robotfindskitten.desktop \
+		$(CURDIR)/debian/robotfindskitten/usr/share/applications/robotfindskitten.desktop
+
 override_dh_installinfo:
 	dh_installinfo
 	rm -f \
