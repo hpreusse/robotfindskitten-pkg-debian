@@ -4,4 +4,5 @@ robotfindskitten.debhelper.log
 robotfindskitten.substvars
 autoreconf.after
 autoreconf.before
-
+robotfindskitten.postinst.debhelper
+robotfindskitten.postrm.debhelper
