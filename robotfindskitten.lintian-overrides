@@ -1,0 +1,2 @@
+# lintian assumes "wont" is misspelled, as is it's won't
+robotfindskitten: spelling-error-in-description wont won't

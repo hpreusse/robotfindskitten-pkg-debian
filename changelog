@@ -1,3 +1,15 @@
+robotfindskitten (2.7182818.701-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #870575)
+  * Install NKIs manually, as nki/Makefile is broken
+  * Re-add Build-Depends: texinfo, compile patched
+    robotfindskitten.texi on the fly
+  * Skip dh_auto_test, as "make test" runs robotfindskiten, which is
+    not exactly what we want.
+  * Override lintian spelling-error-in-description wont won't
+
+ -- Ryan Finnie <ryan@finnie.org>  Mon, 07 Aug 2017 02:49:14 +0000
+
 robotfindskitten (1.7320508.406-5) unstable; urgency=medium
 
   * Fix installation name of desktop png icons

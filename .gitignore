@@ -6,3 +6,4 @@ autoreconf.after
 autoreconf.before
 robotfindskitten.postinst.debhelper
 robotfindskitten.postrm.debhelper
+.debhelper

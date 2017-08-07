@@ -3,8 +3,8 @@ Section: games
 Priority: optional
 Maintainer: Ryan Finnie <ryan@finnie.org>
 Homepage: http://www.robotfindskitten.org/
-Build-Depends: debhelper (>= 9), libncurses5-dev, dh-autoreconf
-Standards-Version: 3.9.6
+Build-Depends: debhelper (>= 9), libncurses5-dev, dh-autoreconf, texinfo
+Standards-Version: 4.0.0
 Vcs-Browser: https://github.com/rfinnie/robotfindskitten-pkg-debian
 Vcs-Git: https://github.com/rfinnie/robotfindskitten-pkg-debian
 

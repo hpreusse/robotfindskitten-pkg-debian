@@ -7,6 +7,9 @@
 %:
 	dh $@ --with autoreconf
 
+override_dh_auto_test:
+	# "make test" runs robotfindskitten, not exactly what we want here.
+
 override_dh_install:
 	dh_install
 	install -m 0755 -d $(CURDIR)/debian/robotfindskitten/usr/share/icons/hicolor/48x48/apps
@@ -20,9 +23,16 @@ override_dh_install:
 		$(CURDIR)/debian/robotfindskitten/usr/share/applications/robotfindskitten.desktop
 
 override_dh_installinfo:
+	install -d -m 0755 $(CURDIR)/doc/compiled
+	makeinfo -o $(CURDIR)/doc/compiled/robotfindskitten.info doc/robotfindskitten.texi
 	dh_installinfo
 	rm -f \
 		$(CURDIR)/debian/robotfindskitten/usr/share/info/dir \
 		$(CURDIR)/debian/robotfindskitten/usr/share/info/dir.gz \
 		$(CURDIR)/debian/robotfindskitten/usr/share/info/dir.old \
 		$(CURDIR)/debian/robotfindskitten/usr/share/info/dir.old.gz \
+
+override_dh_clean:
+	dh_clean
+	$(RM) $(CURDIR)/doc/compiled/robotfindskitten.info
+	$(RM) -d $(CURDIR)/doc/compiled
