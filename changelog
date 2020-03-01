@@ -1,3 +1,12 @@
+robotfindskitten (2.8284271.702-1) unstable; urgency=medium
+
+  * New upstream release
+  * Revert all workarounds from 2.7182818.701-1
+  * Add scalable SVG icon, remove unused XPM
+  * Bump Standards-Version: 4.5.0 and cleanups
+
+ -- Ryan Finnie <ryan@finnie.org>  Sun, 01 Mar 2020 22:41:33 +0000
+
 robotfindskitten (2.7182818.701-1) unstable; urgency=medium
 
   * New upstream release (Closes: #870575)
@@ -120,9 +129,9 @@ robotfindskitten (0.1600005.344b-3) unstable; urgency=low
  -- Neale Pickett <neale@debian.org>  Fri, 13 Sep 2002 16:39:51 -0700
 
 robotfindskitten (0.1600005.344b-2) unstable; urgency=low
-  
+
   * Added build-depends on libtool (closes: #121595)
-  
+
  -- Neale Pickett <neale@debian.org>  Thu,  6 Dec 2001 08:12:10 -0800
 
 robotfindskitten (0.1600005.344b-1) unstable; urgency=low
@@ -136,14 +145,14 @@ robotfindskitten (0.1600005.344b-1) unstable; urgency=low
  -- Neale Pickett <neale@debian.org>  Tue, 27 Nov 2001 09:26:36 -0800
 
 robotfindskitten (0.0.1600005-1) unstable; urgency=low
-  
+
   * Initial packaging for woody
   * Changed versioning scheme to pass lintian check
 
  -- Neale Pickett <neale@debian.org>  Tue,  6 Nov 2001 21:59:24 -0800
 
 robotfindskitten (0.0.1600005-1) unstable; urgency=low
-  
+
   * Initial packaging for woody
   * Changed versioning scheme to pass lintian check
 
@@ -154,7 +163,7 @@ robotfindskitten (v1600005_344b-1) unstable; urgency=low
   * Added contrib NKI
 
  -- Nick Moffitt <nick@zork.net>  Tue, 14 Aug 2001 11:16:08 -0700
-    
+
 robotfindskitten (v1600005_248b-1) unstable; urgency=low
 
   * Fixed stray null info file

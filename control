@@ -3,8 +3,9 @@ Section: games
 Priority: optional
 Maintainer: Ryan Finnie <ryan@finnie.org>
 Homepage: http://www.robotfindskitten.org/
-Build-Depends: debhelper (>= 9), libncurses5-dev, dh-autoreconf, texinfo
-Standards-Version: 4.0.0
+Build-Depends: debhelper, debhelper-compat (= 12), libncurses5-dev
+Rules-Requires-Root: no
+Standards-Version: 4.5.0
 Vcs-Browser: https://github.com/rfinnie/robotfindskitten-pkg-debian
 Vcs-Git: https://github.com/rfinnie/robotfindskitten-pkg-debian
 
@@ -18,4 +19,4 @@ Description: Zen Simulation of robot finding kitten
  you move around with the arrow keys touching things.  If the thing you
  touch is kitten, you get a cute little animation (which was cuter in
  the DOS version) and the simulation ends. Otherwise, you get a brief
- description of what it is you touched. 
+ description of what it is you touched.
