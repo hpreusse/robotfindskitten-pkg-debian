@@ -6,8 +6,8 @@ Homepage: http://www.robotfindskitten.org/
 Build-Depends: debhelper, debhelper-compat (= 12), libncurses5-dev
 Rules-Requires-Root: no
 Standards-Version: 4.5.0
-Vcs-Browser: https://github.com/rfinnie/robotfindskitten-pkg-debian
-Vcs-Git: https://github.com/rfinnie/robotfindskitten-pkg-debian
+Vcs-Browser: https://salsa.debian.org/rfinnie/robotfindskitten-pkg-debian
+Vcs-Git: https://salsa.debian.org/rfinnie/robotfindskitten-pkg-debian.git
 
 Package: robotfindskitten
 Architecture: any
